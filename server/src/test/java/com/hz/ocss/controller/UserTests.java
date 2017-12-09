@@ -24,13 +24,9 @@ public class UserTests {
 
     private MockMvc mvc;
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
     @Before
     public void setup() {
         mvc = MockMvcBuilders.standaloneSetup(new UserController()).build();
-//        DBHelper.getDB();
-        JdbcTestUtils.deleteFromTables(jdbcTemplate, "dept");
     }
 
     @Test

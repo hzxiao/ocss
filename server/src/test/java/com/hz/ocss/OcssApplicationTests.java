@@ -14,8 +14,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Sql(scripts = "classpath:schema.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 public class OcssApplicationTests {
 
-	@Autowired
-	private JdbcTemplate jdbcTemplate;
 	@Test
 	public void contextLoads() {
 
